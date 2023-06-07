@@ -3,6 +3,7 @@ import router from "./router";
 import morgan from "morgan";
 import cors from "cors";
 import { protect } from './modules/auth';
+import { createUser, signinUser } from './handlers/user';
 
 const app = express();
 
@@ -20,5 +21,7 @@ app.get('/', (req, res) => {
 })
 
 app.use('/api',protect, router)
+app.post('/user', createUser )
+app.post('/signin', signinUser)
 
 export default app;
