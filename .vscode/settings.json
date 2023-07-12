@@ -1,0 +1,5 @@
+{
+    "CodeGPT.model": "gpt-4",
+    "CodeGPT.maxTokens": 500,
+    "codegpt.apiKey": "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"
+}
